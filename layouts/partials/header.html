@@ -42,6 +42,12 @@
                 <span class="menu-item delimiter"></span>
                 {{- end -}}
 
+                {{- if .Site.Params.cv.enable -}}
+                <a class="menu-item" href="{{ .Site.Params.cv.link | relLangURL }}" title="CV" target="_blank">
+                    <i class="fas fa-file-alt fa-fw" aria-hidden="true"></i>
+                </a>
+                {{- end -}}
+
                 {{- if .Site.Params.search.enable -}}
                 <span class="menu-item search" id="search-desktop">
                     <input type="text"
