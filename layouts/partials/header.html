@@ -160,9 +160,20 @@
                 {{- .Pre | safeHTML }}{{ .Name }}{{ .Post | safeHTML -}}
             </a>
             {{- end -}}
-            <a class="menu-item theme-switch" title="{{ T " switchTheme" }}">
-                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-            </a>
+
+            <div class="menu-item btn-container">
+                <a class="menu-item theme-switch" title="{{ T " switchTheme" }}">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+
+                {{- if .Site.Params.cv.enable -}}
+                <a class="menu-item" href="{{ .Site.Params.cv.link | relLangURL }}" title="CV" target="_blank">
+                    <i class="fas fa-file-alt fa-fw" aria-hidden="true"></i>
+                </a>
+                {{- end -}}
+            </div>
+
+
             {{- if .Site.IsMultiLingual -}}
 
             <a class="menu-item" title="{{ T " selectLanguage" }}">

@@ -320,6 +320,13 @@ header {
       .menu-item {
         display: block;
         line-height: 2.5rem;
+
+        &.btn-container {
+          display: flex !important;
+          flex-direction: row;
+          justify-content: center;
+          gap: 20px;
+        }
       }
 
       &.active {
