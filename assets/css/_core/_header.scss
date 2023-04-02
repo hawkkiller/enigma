@@ -14,7 +14,8 @@ header {
     vertical-align: text-bottom;
   }
 
-  .logo, .header-title-pre {
+  .logo,
+  .header-title-pre {
     padding-right: .25rem;
   }
 
@@ -105,7 +106,8 @@ header {
     display: none;
   }
 
-  .open &, &.mobile {
+  .open &,
+  &.mobile {
     input {
       color: $global-font-color;
       background-color: $search-background-color;
@@ -165,6 +167,10 @@ header {
     .menu {
       overflow: hidden;
       white-space: nowrap;
+
+      a {
+        cursor: pointer;
+      }
 
       .menu-inner {
         float: right;
@@ -296,7 +302,8 @@ header {
       .search {
         flex-grow: 10;
 
-        .algolia-autocomplete, input {
+        .algolia-autocomplete,
+        input {
           width: 100%;
         }
       }
