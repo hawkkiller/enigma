@@ -79,7 +79,7 @@
       display: block;
     }
 
-    > nav > ul {
+    >nav>ul {
       margin: .625rem 0;
     }
 
@@ -88,7 +88,7 @@
         display: none;
       }
 
-      .has-active > ul {
+      .has-active>ul {
         display: block;
       }
     }
@@ -99,14 +99,6 @@
 
       [theme=dark] & {
         color: $single-link-color-dark;
-      }
-
-      &::before {
-        color: $single-link-hover-color;
-
-        [theme=dark] & {
-          color: $single-link-hover-color-dark;
-        }
       }
     }
   }
@@ -135,7 +127,7 @@
   .toc-content {
     background-color: $code-background-color;
 
-    > nav > ul {
+    >nav>ul {
       margin: 0;
       padding: .4rem 1rem .4rem 1.8rem;
     }

@@ -1,6 +1,6 @@
 .home {
   .home-profile {
-    @include transform(translateY( 16vh));
+    @include transform(translateY(16vh));
     padding: 0 0 .5rem;
     text-align: center;
 
@@ -112,7 +112,7 @@
     }
 
     .single-title {
-      font-size: 1.25rem;
+      font-size: 22px;
       line-height: 140%;
       margin: 0.4rem 0;
     }
@@ -125,10 +125,11 @@
       overflow: hidden;
       text-overflow: ellipsis;
       @include overflow-wrap(break-word);
-      color: $global-font-secondary-color;
+      color: $global-font-color;
+      font-size: 16px;
 
       [theme=dark] & {
-        color: $global-font-secondary-color-dark;
+        color: $global-font-color-dark;
       }
 
       h2,
@@ -153,7 +154,8 @@
 
       @include link(false, true);
 
-      b, strong {
+      b,
+      strong {
         color: $global-font-secondary-color;
 
         [theme=dark] & {
