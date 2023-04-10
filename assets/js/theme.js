@@ -468,8 +468,7 @@ var Theme = /*#__PURE__*/function () {
         showZoomInOutIcons: true
       });
     }
-  }, 
-  {
+  }, {
     key: "initHighlight",
     value: function initHighlight() {
       var _this5 = this;
@@ -529,8 +528,7 @@ var Theme = /*#__PURE__*/function () {
         }
       });
     }
-  },
-   {
+  }, {
     key: "initTable",
     value: function initTable() {
       this.util.forEach(document.querySelectorAll('.content table'), function ($table) {
@@ -1055,9 +1053,9 @@ var Theme = /*#__PURE__*/function () {
         this.initSearch();
         this.initDetails();
         this.initLightGallery();
-        this.initHighlight();
-        // this.initHeaderLink();
         this.initTable();
+        this.initHighlight(); // this.initHeaderLink();
+
         this.initMath();
         this.initMermaid();
         this.initEcharts();

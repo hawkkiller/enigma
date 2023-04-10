@@ -763,7 +763,7 @@ class Theme {
             this.initLightGallery();
             this.initTable();
             this.initHighlight();
-            this.initHeaderLink();
+            // this.initHeaderLink();
             this.initMath();
             this.initMermaid();
             this.initEcharts();
