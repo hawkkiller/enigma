@@ -468,7 +468,8 @@ var Theme = /*#__PURE__*/function () {
         showZoomInOutIcons: true
       });
     }
-  }, {
+  }, 
+  {
     key: "initHighlight",
     value: function initHighlight() {
       var _this5 = this;
@@ -528,7 +529,8 @@ var Theme = /*#__PURE__*/function () {
         }
       });
     }
-  }, {
+  },
+   {
     key: "initTable",
     value: function initTable() {
       this.util.forEach(document.querySelectorAll('.content table'), function ($table) {
@@ -539,17 +541,17 @@ var Theme = /*#__PURE__*/function () {
       });
     }
   },
-  // {
-  //   key: "initHeaderLink",
-  //   value: function initHeaderLink() {
-  //     for (var num = 1; num <= 6; num++) {
-  //       this.util.forEach(document.querySelectorAll('.single .content > h' + num), function ($header) {
-  //         $header.classList.add('headerLink');
-  //         $header.insertAdjacentHTML('afterbegin', "<a href=\"#".concat($header.id, "\" class=\"header-mark\"></a>"));
-  //       });
-  //     }
-  //   }
-  // }, 
+  {
+    key: "initHeaderLink",
+    value: function initHeaderLink() {
+      for (var num = 1; num <= 6; num++) {
+        this.util.forEach(document.querySelectorAll('.single .content > h' + num), function ($header) {
+          $header.classList.add('headerLink');
+          $header.insertAdjacentHTML('afterbegin', "<a href=\"#".concat($header.id, "\" class=\"header-mark\"></a>"));
+        });
+      }
+    }
+  }, 
   {
     key: "initToc",
     value: function initToc() {
@@ -1055,9 +1057,9 @@ var Theme = /*#__PURE__*/function () {
         this.initSearch();
         this.initDetails();
         this.initLightGallery();
-        this.initHighlight();
+        // this.initHighlight();
+        // this.initHeaderLink();
         this.initTable();
-        this.initHeaderLink();
         this.initMath();
         this.initMermaid();
         this.initEcharts();
